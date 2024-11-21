@@ -145,10 +145,6 @@ main {
 
 /* Adaptations pour mobile */
 @media (max-width: 425px) {
-    .navbar ul {
-        gap: 10px;
-    }
-
     .formation-4231 {
         margin-top: 180px;
     }
@@ -162,11 +158,11 @@ main {
     }
 
     .player-card {
-        width: 80px;
+        width: 75px;
     }
 
     .player-name {
-        font-size: 0.7em;
+        font-size: 0.6em;
         margin: 5px 0;
     }
 }
@@ -175,10 +171,6 @@ main {
 @media (min-width: 426px) and (max-width: 768px) {
     .formation-4231 {
         margin-top: 160px;
-    }
-
-    .navbar ul {
-        gap: 15px;
     }
 
     .player-card {
@@ -199,10 +191,6 @@ main {
 
 /* Adaptations pour bureau */
 @media (min-width: 1025px) {
-    .navbar ul {
-        gap: 30px;
-    }
-
     .player-card {
         width: 160px;
     }
