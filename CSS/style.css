@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-/* Style de l'en-tête */
+/* En-tête */
 header {
     width: 100%;
     background-color: #d00027;
@@ -31,7 +31,7 @@ header h1 {
     font-size: 1.8em;
 }
 
-/* Style de la barre de navigation */
+/* Barre de navigation */
 .navbar {
     display: grid;
     justify-content: center;
@@ -42,7 +42,7 @@ header h1 {
     display: grid;
     gap: 20px;
     list-style: none;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* S'adapte en fonction de l'espace */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     width: 100%;
     max-width: 800px;
 }
@@ -57,13 +57,14 @@ header h1 {
     transition: background-color 0.3s;
 }
 
+.navbar a:hover {
+    background-color: #b00020;
+    border-radius: 5px;
+}
+
 /* Menu déroulant */
 .dropdown {
     position: relative;
-}
-
-.dropbtn {
-    cursor: pointer;
 }
 
 .dropdown-content {
@@ -90,27 +91,19 @@ header h1 {
     background-color: #f2f2f2;
 }
 
-/* Afficher le menu déroulant au survol */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Effets de survol pour les éléments de la barre de navigation */
-.navbar a:hover {
-    background-color: #b00020;
-    border-radius: 5px;
-}
-
-/* Style pour le contenu principal */
+/* Contenu principal */
 main {
-    margin-top: 100px; /* Compense la hauteur de l'en-tête fixe */
+    margin-top: 100px;
     padding: 20px;
     width: 100%;
     max-width: 800px;
     text-align: center;
 }
 
-/* Styles pour les sections de contenu */
 section {
     background: #FFFFFF;
     padding: 20px;
@@ -129,8 +122,8 @@ section {
 }
 
 iframe {
-    width: 80%;
-    height: 315px;
+    width: 100%; /* Restauré à 100% */
+    height: 315px; /* Hauteur fixée */
     border-radius: 10px;
     display: block;
     margin: auto;
