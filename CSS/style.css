@@ -41,12 +41,13 @@ section {
 }
 
 iframe {
-    width: 100%; /* Restauré à 100% */
-    height: 315px; /* Hauteur fixée */
-    border-radius: 10px;
+    border: none; /* Supprime la bordure de l'iframe */
+    width: 100%; /* Ajustement à la largeur du conteneur */
+    height: 315px; /* Hauteur ajustée si nécessaire */
+    border-radius: 10px; /* Coins arrondis si vous souhaitez garder cette esthétique */
     display: block;
     margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre portée pour un effet visuel (optionnel) */
 }
 
 /* Styles des tables */
