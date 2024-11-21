@@ -170,3 +170,32 @@ main {
         font-size: 1em;
     }
 }
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 2px solid black; /* Ajout d'un contour noir autour de chaque ligne */
+    padding: 10px; /* Espacement à l'intérieur du contour */
+    background-color: #f0f0f0; /* Couleur de fond pour améliorer le contraste */
+}
+
+.left-image, .right-image {
+    flex: 50%;
+    padding: 10px; /* Espacement autour des images */
+}
+
+.left-text, .right-text {
+    flex: 50%;
+    padding: 15px;
+    border: 1px solid black; /* Contour autour du texte */
+    background-color: white; /* Fond blanc pour le texte pour améliorer la lisibilité */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Ombre subtile pour un effet de profondeur */
+}
+
+.left-image img, .right-image img {
+    width: 100%; /* Largeur adaptée au conteneur */
+    height: auto; /* Hauteur adaptée pour maintenir le ratio */
+    max-height: 300px; /* Hauteur maximale pour ne pas dépasser */
+}
