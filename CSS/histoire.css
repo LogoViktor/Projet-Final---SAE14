@@ -16,43 +16,92 @@ body {
     align-items: center;
 }
 
-.history-timeline {
+.history-alternating {
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: #393b7c;
     border-radius: 15px;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2em;
-    color: #d00027;
-    margin-bottom: 20px;
-}
-
-.timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.timeline-item {
+.history-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    border-left: 4px solid #d00027;
-    padding-left: 15px;
-    position: relative;
+    gap: 20px;
+    margin-bottom: 30px; /* Réduit l'espacement entre les items */
 }
 
-.timeline-date {
-    font-size: 1.2em;
-    color: #d00027;
-    font-weight: bold;
+.history-item.reverse {
+    flex-direction: row-reverse; /* Texte et image inversés */
 }
 
-.timeline-content {
+/* Conteneur pour contenir l'image */
+.history-image-wrapper {
+    flex: 1;
+    max-width: 35%; /* Augmente la largeur des images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Cache l'image si elle dépasse */
+    border-radius: 10px; /* Coins arrondis */
+    background-color: #fff; /* Fond blanc derrière l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour effet visuel */
+}
+
+/* Image contenue et réduite */
+.history-image {
+    width: 100%;
+    height: auto; /* Maintient les proportions de l'image */
+    object-fit: cover; /* Contient l'image sans la déformer */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Texte */
+.history-text {
+    flex: 1;
+    max-width: 55%; /* Réduit la largeur des textes */
     background: #fff;
-    padding: 15px;
+    padding: 15px; /* Réduit l'espacement interne */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.history-text h3 {
+    font-size: 1.4em; /* Légèrement réduit */
+    color: #d00027;
+    margin-bottom: 10px;
+}
+
+.history-text p {
+    font-size: 0.9em; /* Texte légèrement plus petit */
+    line-height: 1.5;
+    color: #333;
+}
+
+@media (max-width: 425px) {
+    .history-item {
+        flex-direction: column; /* Les images passent en dessous du texte */
+        align-items: flex-start; /* Alignement à gauche pour les colonnes */
+        gap: 10px; /* Réduit l'espacement entre image et texte */
+    }
+
+    .history-item.reverse {
+        flex-direction: column; /* Supprime la disposition inversée sur mobile */
+    }
+
+    .history-image-wrapper {
+        max-width: 100%; /* Les images occupent toute la largeur */
+        margin: 0 auto; /* Centrage horizontal */
+    }
+
+    .history-text {
+        max-width: 100%; /* Le texte occupe toute la largeur */
+        text-align: left; /* Alignement du texte à gauche */
+    }
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2em; /* Taille ajustée */
+    margin-bottom: 20px; /* Espacement en dessous */
+    color: #fff; /* Couleur du texte pour contraster avec le fond */
 }
