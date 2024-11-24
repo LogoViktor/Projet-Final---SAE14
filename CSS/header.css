@@ -197,3 +197,13 @@ header h1 {
 @keyframes l7 {
     to {background-position: 150% 0%}
 }
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #d00027;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}

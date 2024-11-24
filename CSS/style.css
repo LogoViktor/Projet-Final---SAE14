@@ -68,14 +68,6 @@ th, td {
 .draw { background-color: #f8f9fa; } /* Gris pour les matchs nuls */
 .lose { background-color: #f8d7da; } /* Rouge pour les défaites */
 
-/* Footer */
-footer {
-    width: 100%;
-    padding: 20px;
-    background-color: #d00027;
-    color: #fff;
-    text-align: center;
-    margin-top: 40px;
-}
+
 
 
