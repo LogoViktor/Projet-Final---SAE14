@@ -107,14 +107,9 @@ main {
     margin: 3px 0;
 }
 
-/* Style pour le numéro et la position du joueur */
-.player-number,
-.player-position {
-    color: #000;
-}
-
 /* Infobulle pour informations supplémentaires */
 .info-tooltip {
+    font-size: 1em;
     position: absolute;
     top: 0;
     left: 0;
@@ -137,6 +132,7 @@ main {
 
 /* Affichage de l'infobulle au survol de la carte */
 .player-card:hover .info-tooltip {
+    font-size: 1em;
     visibility: visible;
     opacity: 1;
 }
@@ -163,6 +159,12 @@ main {
         font-size: 0.6em;
         margin: 5px 0;
     }
+    
+    .player-card:hover .info-tooltip {
+        font-size: 0.5em;
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 /* Adaptations pour tablette */
@@ -173,6 +175,12 @@ main {
 
     .player-card {
         width: 110px;
+    }
+
+    .player-card:hover .info-tooltip {
+        font-size: 0.7em;
+        visibility: visible;
+        opacity: 1;
     }
 }
 

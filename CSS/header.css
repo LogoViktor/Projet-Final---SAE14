@@ -133,21 +133,6 @@ header h1 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7); /* fond semi-transparent */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    animation: fadeOutWrapper 3s ease-out forwards;
-    animation-delay: 3s; /* délai avant que l'animation de disparition commence */
-}
-
-.loader-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
     background: #000; /* fond complètement noir */
     display: flex;
     justify-content: center;
