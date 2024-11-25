@@ -68,6 +68,39 @@ th, td {
 .draw { background-color: #f8f9fa; } /* Gris pour les matchs nuls */
 .lose { background-color: #f8d7da; } /* Rouge pour les défaites */
 
+.table-container {
+    width: 100%; /* Prenez toute la largeur disponible de la section */
+    height: 300px; /* Hauteur fixe pour activer le défilement */
+    overflow-y: auto; /* Barre de défilement verticale */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+/* Table Styles */
+table {
+    width: 100%; /* Table étendue à 100% de la largeur de son conteneur */
+    border-collapse: collapse;
+    text-align: left;
+}
 
+/* En-têtes du tableau */
+thead th {
+    background: #f2f2f2;
+    position: sticky; /* Fixe l'en-tête */
+    top: 0;
+    z-index: 10;
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+}
 
+/* Cellules */
+tbody td, thead th {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
