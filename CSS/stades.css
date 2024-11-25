@@ -69,7 +69,7 @@ main {
 
 /* Styles pour les écrans de petite taille (max 425px),
    réorganisant les éléments pour une présentation verticale. */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .row {
         display: flex;
         flex-direction: column;
