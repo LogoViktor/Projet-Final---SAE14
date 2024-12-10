@@ -150,3 +150,15 @@ section {
         transform: translateY(0);
     }
 }
+
+.header-logo {
+    display: block;
+    margin: 0 auto; 
+    width: 75px; 
+    height: auto; 
+}
+
+.logo-link {
+    display: inline-block; /* Permet de contenir l'image comme un élément cliquable */
+    text-decoration: none; /* Supprime le soulignement */
+}

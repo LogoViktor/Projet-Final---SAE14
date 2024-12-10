@@ -100,6 +100,16 @@ body {
 main h2 {
     text-align: center;
     font-size: 2em; /* Taille ajustée */
-    margin-bottom: 20px; /* Espacement en dessous */
-    color: #d00027; /* Couleur du texte pour contraster avec le fond */
+    margin-bottom: 20px; /* Espacement en dessous */ 
+}
+
+.centered-title {
+    background-color: #fff; /* Couleur de fond */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+    width: fit-content; /* Ajuste la largeur à son contenu */
+    margin: 0 auto 20px auto; /* Centre horizontalement et ajoute un espace en bas */
+    color: #d00027; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
 }
