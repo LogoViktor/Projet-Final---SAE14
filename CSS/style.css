@@ -64,8 +64,8 @@ th, td {
 
 /* Styles pour les résultats des matchs */
 .win { background-color: #d4edda !important; } /* Vert pour les victoires */
-.draw { background-color: #f8f9fa; } /* Gris pour les matchs nuls */
-.lose { background-color: #f8d7da; } /* Rouge pour les défaites */
+.draw { background-color: #f8f9fa !important; } /* Gris pour les matchs nuls */
+.lose { background-color: #f8d7da !important; } /* Rouge pour les défaites */
 .losc { background-color: #d4dced !important; }
 
 .table-container {
